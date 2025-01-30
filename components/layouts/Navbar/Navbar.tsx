@@ -1,15 +1,15 @@
 
 import Image from "next/image";
 import React from "react";
-import Logo from "@/app/image/logo-1.jpg";
+import Logo from "@/app/image/logo-1.png";
 import Link from "next/link";
 import { NavigationMenu } from "./utils/constant";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-center h-24">
-      <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5">
+    <nav className="w-full flex justify-center h-24 z-50">
+      <div className="w-full max-w-5xl flex justify-between items-center">
         <div className="flex justify-between items-center font-semibold w-full">
           <Link href="/" legacyBehavior passHref>
             <Image src={Logo} width={150} height={150} alt="..." priority className="cursor-pointer"/>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link
                   key={menu.name}
                   href={menu.href}
-                  className="hover:text-green-600 transition-all duration-200 cursor-pointer"
+                  className="hover:text-green-700 text-green-600 transition-all duration-200 cursor-pointer"
                 >
                   {menu.name}
                 </Link>
