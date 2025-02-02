@@ -8,8 +8,8 @@ import RumiLandLogo from "@/components/icon/RumiLandLogo";
 
 const Hero = () => {
     return (
-        <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-screen flex items-center justify-center">
+        <div className="w-full h-screen">
+            <div className="flex items-center justify-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 -z-10">
                     <Image
@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
 
                 {/* Hero Content */}
-                <div className="text-center text-white px-6">
+                <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center w-full text-white px-6">
                     <motion.h1
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}

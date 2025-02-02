@@ -33,11 +33,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen flex flex-col items-center relative">
-            <div className="flex-1 w-full flex flex-col">
+          <main className="min-h-screen flex flex-col items-center justify-center">
+            <div className="w-full flex flex-col items-center">
               {/* <Hero /> Hero akan full width di atas */}
               <Navbar />
-              <div className="flex flex-col gap-20 max-w-5xl p-5 w-full">
+              <div className="flex flex-col max-w-5xl p-5 w-full">
                 {children}
               </div>
             </div>

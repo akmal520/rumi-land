@@ -8,11 +8,11 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-center h-24 z-50">
+    <nav className="w-full flex justify-center h-24 z-50 sticky top-0">
       <div className="w-full max-w-5xl flex justify-between items-center">
         <div className="flex justify-between items-center font-semibold w-full">
           <Link href="/" legacyBehavior passHref>
-            <Image src={Logo} width={150} height={150} alt="..." priority className="cursor-pointer"/>
+            <Image src={Logo} width={180} height={180} alt="..." priority className="cursor-pointer"/>
           </Link>
           <div className="flex flex-row items-center space-x-6">
             {
