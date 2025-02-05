@@ -5,7 +5,7 @@ interface NavigationItem {
 
 export const NavigationMenu: NavigationItem[] = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Katalog', href: '/katalog' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Tentang Kami', href: '/tentang-kami' },
+    { name: 'Jasa Kami', href: '/jasa-kami' },
+    { name: 'Kontak', href: '/kontak' },
 ];

@@ -4,15 +4,15 @@ import { CardContent } from "./utils/HomeConstants";
 
 const WhyUs: React.FC = () => {
     return (
-        <section className="flex flex-col justify-center items-center w-full -mt-12">
+        <section className="flex flex-col justify-center items-center w-full -mt-12 container">
             <h1 className="text-4xl font-bold text-green-600 capitalize">
                 Kenapa memilih kami?
             </h1>
 
             <div className="flex flex-row gap-5 mt-14 select-none cursor-default">
-                {CardContent.map((card) => (
+                {CardContent.map((card, index) => (
                     <>
-                        <Card>
+                        <Card key={`card-${card.title}-${index}`}>
                             <CardIcon>
                                 <card.icon className="text-5xl text-green-600 group-hover:text-white transition-all duration-300" />
                             </CardIcon>
@@ -32,7 +32,7 @@ const WhyUs: React.FC = () => {
 
 const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
-        <div className="flex flex-col gap-6 justify-start items-center border-2 border-green-600 p-5 rounded-lg w-[370px] text-center group">
+        <div className="flex flex-col gap-6 justify-start items-center border-2 border-green-600 p-5 rounded-lg w-[350px] text-center group">
             {children}
         </div>
     );

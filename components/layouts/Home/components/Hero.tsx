@@ -19,6 +19,7 @@ const Hero = () => {
                         objectFit="cover"
                         quality={100}
                         priority
+                        className="object-cover object-center bg-no-repeat bg-center"
                     />
                     {/* Overlay untuk efek gelap */}
                     <div className="absolute inset-0 bg-black/70"></div>
@@ -35,7 +36,8 @@ const Hero = () => {
                         <span
                             className="text-green-600 uppercase tracking-widest"
                             style={{
-                                textShadow: "2px 2px 2px rgba(255, 255, 255, 0.4)",
+                                textShadow:
+                                    "2px 2px 2px rgba(255, 255, 255, 0.4)",
                             }}
                         >
                             Rumi Land
